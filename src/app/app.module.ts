@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TilePokemonComponent } from './tile-pokemon/tile-pokemon.component';
+import { CardPokemonComponent } from './card-pokemon/card-pokemon.component';
+import { PokemonImageComponent } from './pokemon-image/pokemon-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TilePokemonComponent
+    CardPokemonComponent,
+    PokemonImageComponent
   ],
   imports: [
     BrowserModule,
