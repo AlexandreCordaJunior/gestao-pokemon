@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;cursor: pointer">
+  <div class="card-body">
+    <img [src]="pokemon?.sprite" [alt]="pokemon?.name" class="img-responsive" style="max-height: 50px">
+    <h4 class="card-title list-group-item-heading">{{ pokemon?.name }}</h4>
+    <p class="card-subtitle mb-2 text-muted list-group-item-text">
+      {{ pokemon?.first_type }}
+      <span *ngIf="pokemon?.second_type">/ {{ pokemon?.second_type }}</span>
+    </p>
+    <a routerLink="/pokemon-detalhes" [queryParams]="{ id: pokemon?.id }"><button class="btn btn-success" > Detalhes </button></a>
+  </div>
+</div>

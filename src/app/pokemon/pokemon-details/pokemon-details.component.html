@@ -1,0 +1,73 @@
+<form>
+  <img [src]="pokemon?.sprite" [alt]="pokemon?.name" class="img-responsive" style="max-height: 100px">
+
+  <div class="form-group row">
+    <label for="numero" class="col-sm-2 col-form-label">Número</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="numero" [value]="pokemon?.id">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="nome" [value]="pokemon?.name">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="first_type" class="col-sm-2 col-form-label">Primeiro Tipo</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="first_type" [value]="pokemon?.first_type">
+    </div>
+  </div>
+
+  <div class="form-group row" *ngIf="pokemon?.second_type">
+    <label for="second_type" class="col-sm-2 col-form-label">Segundo Tipo</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="second_type" [value]="pokemon?.second_type">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="hp" class="col-sm-2 col-form-label">HP Base</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="hp" [value]="pokemon?.stats?.hp">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="attack" class="col-sm-2 col-form-label">Ataque Base</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="attack" [value]="pokemon?.stats?.attack">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="defense" class="col-sm-2 col-form-label">Defesa Base</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="defense" [value]="pokemon?.stats?.defense">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="special_attack" class="col-sm-2 col-form-label">Ataque Especial Base</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="special_attack" [value]="pokemon?.stats?.special_attack">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="special_defense" class="col-sm-2 col-form-label">Defesa Especial Base</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="special_defense" [value]="pokemon?.stats?.special_defense">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="speed" class="col-sm-2 col-form-label">Velocidade Base</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="speed" [value]="pokemon?.stats?.speed">
+    </div>
+  </div>
+</form>
