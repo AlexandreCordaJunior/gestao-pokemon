@@ -5,6 +5,7 @@ import {PokemonListComponent} from "./pokemon/pokemon-list/pokemon-list.componen
 import {PokemonDetailsComponent} from "./pokemon/pokemon-details/pokemon-details.component";
 import {TeamsListComponent} from "./teams/teams-list/teams-list.component";
 import {TeamCreateComponent} from "./teams/team-create/team-create.component";
+import {TeamResolverService} from "./services/team-resolver.service";
 
 const routes: Routes = [
   {
@@ -17,7 +18,10 @@ const routes: Routes = [
   },
   {
     path: 'teams-list/novo/:id',
-    component: TeamCreateComponent
+    component: TeamCreateComponent,
+    resolve: {
+      teams: TeamResolverService
+    }
   },
   {
     path: 'teams-list/novo',
