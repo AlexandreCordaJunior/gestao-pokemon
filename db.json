@@ -1,3 +1,96 @@
 {
-  "teams": []
+  "teams": [
+    {
+      "name": "Nome",
+      "first_pokemon": {
+        "id": 1,
+        "name": "Bulbasaur",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "stats": {
+          "hp": 45,
+          "attack": 49,
+          "defense": 49,
+          "special_attack": 65,
+          "special_defense": 65,
+          "speed": 45
+        },
+        "first_type": "Grass",
+        "second_type": "Poison"
+      },
+      "second_pokemon": {
+        "id": 21,
+        "name": "Spearow",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+        "stats": {
+          "hp": 40,
+          "attack": 60,
+          "defense": 30,
+          "special_attack": 31,
+          "special_defense": 31,
+          "speed": 70
+        },
+        "first_type": "Normal",
+        "second_type": "Flying"
+      },
+      "third_pokemon": {
+        "id": 23,
+        "name": "Ekans",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+        "stats": {
+          "hp": 35,
+          "attack": 60,
+          "defense": 44,
+          "special_attack": 40,
+          "special_defense": 54,
+          "speed": 55
+        },
+        "first_type": "Poison"
+      },
+      "fourth_pokemon": {
+        "id": 91,
+        "name": "Cloyster",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+        "stats": {
+          "hp": 50,
+          "attack": 95,
+          "defense": 180,
+          "special_attack": 85,
+          "special_defense": 45,
+          "speed": 70
+        },
+        "first_type": "Water",
+        "second_type": "Ice"
+      },
+      "fifth_pokemon": {
+        "id": 98,
+        "name": "Krabby",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+        "stats": {
+          "hp": 30,
+          "attack": 105,
+          "defense": 90,
+          "special_attack": 25,
+          "special_defense": 25,
+          "speed": 50
+        },
+        "first_type": "Water"
+      },
+      "sixth_pokemon": {
+        "id": 76,
+        "name": "Golem",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/76.png",
+        "stats": {
+          "hp": 80,
+          "attack": 120,
+          "defense": 130,
+          "special_attack": 55,
+          "special_defense": 65,
+          "speed": 45
+        },
+        "first_type": "Rock",
+        "second_type": "Ground"
+      },
+      "id": 1
+    }
+  ]
 }

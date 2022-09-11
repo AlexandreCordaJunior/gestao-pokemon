@@ -42,4 +42,5 @@ export interface Team {
   fourth_pokemon?: Pokemon,
   fifth_pokemon?: Pokemon,
   sixth_pokemon?: Pokemon,
+  id?: string // para o json-server
 }
