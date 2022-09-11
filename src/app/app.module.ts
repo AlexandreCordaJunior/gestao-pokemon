@@ -10,6 +10,10 @@ import { PokemonListItemComponent } from './pokemon/pokemon-list-item/pokemon-li
 import {HttpClientModule} from "@angular/common/http";
 import { PokemonListComponent } from './pokemon/pokemon-list/pokemon-list.component';
 import { PokemonDetailsComponent } from './pokemon/pokemon-details/pokemon-details.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { TeamsListComponent } from './teams/teams-list/teams-list.component';
+import { TeamsListItemComponent } from './teams/teams-list-item/teams-list-item.component';
+import { TeamCreateComponent } from './teams/team-create/team-create.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,17 @@ import { PokemonDetailsComponent } from './pokemon/pokemon-details/pokemon-detai
     HomeComponent,
     PokemonListItemComponent,
     PokemonListComponent,
-    PokemonDetailsComponent
+    PokemonDetailsComponent,
+    TeamsListComponent,
+    TeamsListItemComponent,
+    TeamCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -33,3 +33,13 @@ export interface Pokemon {
   first_type: string,
   second_type?: string
 }
+
+export interface Team {
+  name: string,
+  first_pokemon?: Pokemon,
+  second_pokemon?: Pokemon,
+  third_pokemon?: Pokemon,
+  fourth_pokemon?: Pokemon,
+  fifth_pokemon?: Pokemon,
+  sixth_pokemon?: Pokemon,
+}

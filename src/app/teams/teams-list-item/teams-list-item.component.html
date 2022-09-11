@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-between">
+  <h3 class="align-middle">{{ team?.name }}</h3>
+
+  <img *ngIf="team?.first_pokemon" [src]="team?.first_pokemon?.sprite" [alt]="team?.first_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
+  <img *ngIf="team?.second_pokemon"  [src]="team?.second_pokemon?.sprite" [alt]="team?.second_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
+  <img *ngIf="team?.third_pokemon"  [src]="team?.third_pokemon?.sprite" [alt]="team?.third_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
+  <img *ngIf="team?.fourth_pokemon"  [src]="team?.fourth_pokemon?.sprite" [alt]="team?.fourth_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
+  <img *ngIf="team?.fifth_pokemon"  [src]="team?.fifth_pokemon?.sprite" [alt]="team?.fifth_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
+  <img *ngIf="team?.sixth_pokemon"  [src]="team?.sixth_pokemon?.sprite" [alt]="team?.sixth_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+  <div>
+    <button class="btn btn-primary" (click)="navEditar()">Editar</button>
+    <button class="btn btn-danger" (click)="deleteTeam()">Apagar</button>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="teamForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" [disabled]="!teamForm.valid" class="btn btn-success">Salvar</button>
+          <button (click)="navBack()" type="button" class="btn btn-danger">Cancelar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" class="form-control" formControlName="name">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="first_pokemon">Primeiro Pokémon</label>
+            <input type="number" id="first_pokemon" class="form-control" formControlName="first_pokemon" (ngModelChange)="changePokemon(POKEMON_POSITION_TYPE.first_pokemon)">
+            <img *ngIf="teamForm.controls['first_pokemon'].valid && pokemonList['first_pokemon']" [src]="pokemonList['first_pokemon']?.sprite" [alt]="pokemonList['first_pokemon']?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+            <p *ngIf="!teamForm.controls['first_pokemon'].valid" class="text-danger">{{ mapeiaErro(teamForm.controls['first_pokemon'].errors) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="second_pokemon">Segundo Pokémon</label>
+            <input type="number" id="second_pokemon" class="form-control" formControlName="second_pokemon" (ngModelChange)="changePokemon(POKEMON_POSITION_TYPE.second_pokemon)">
+            <img *ngIf="teamForm.controls['second_pokemon'].valid && pokemonList['second_pokemon']" [src]="pokemonList['second_pokemon']?.sprite" [alt]="pokemonList['second_pokemon']?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+            <p *ngIf="!teamForm.controls['second_pokemon'].valid" class="text-danger">{{ mapeiaErro(teamForm.controls['second_pokemon'].errors) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="third_pokemon">Terceiro Pokémon</label>
+            <input type="number" id="third_pokemon" class="form-control" formControlName="third_pokemon" (ngModelChange)="changePokemon(POKEMON_POSITION_TYPE.third_pokemon)">
+            <img *ngIf="teamForm.controls['third_pokemon'].valid && pokemonList['third_pokemon']" [src]="pokemonList['third_pokemon']?.sprite" [alt]="pokemonList['third_pokemon']?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+            <p *ngIf="!teamForm.controls['third_pokemon'].valid" class="text-danger">{{ mapeiaErro(teamForm.controls['third_pokemon'].errors) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="fourth_pokemon">Quarto Pokémon</label>
+            <input type="number" id="fourth_pokemon" class="form-control" formControlName="fourth_pokemon" (ngModelChange)="changePokemon(POKEMON_POSITION_TYPE.fourth_pokemon)">
+            <img *ngIf="teamForm.controls['fourth_pokemon'].valid && pokemonList['fourth_pokemon']" [src]="pokemonList['fourth_pokemon']?.sprite" [alt]="pokemonList['fourth_pokemon']?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+            <p *ngIf="!teamForm.controls['fourth_pokemon'].valid" class="text-danger">{{ mapeiaErro(teamForm.controls['fourth_pokemon'].errors) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="fifth_pokemon">Quinto Pokémon</label>
+            <input type="number" id="fifth_pokemon" class="form-control" formControlName="fifth_pokemon" (ngModelChange)="changePokemon(POKEMON_POSITION_TYPE.fifth_pokemon)">
+            <img *ngIf="teamForm.controls['fifth_pokemon'].valid && pokemonList['fifth_pokemon']" [src]="pokemonList['fifth_pokemon']?.sprite" [alt]="pokemonList['fifth_pokemon']?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+            <p *ngIf="!teamForm.controls['fifth_pokemon'].valid" class="text-danger">{{ mapeiaErro(teamForm.controls['fifth_pokemon'].errors) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="sixth_pokemon">Sexto Pokémon</label>
+            <input type="number" id="sixth_pokemon" class="form-control" formControlName="sixth_pokemon" (ngModelChange)="changePokemon(POKEMON_POSITION_TYPE.sixth_pokemon)">
+            <img *ngIf="teamForm.controls['sixth_pokemon'].valid && pokemonList['sixth_pokemon']" [src]="pokemonList['sixth_pokemon']?.sprite" [alt]="pokemonList['sixth_pokemon']?.name" class="img-responsive align-middle" style="max-height: 75px">
+
+            <p *ngIf="!teamForm.controls['sixth_pokemon'].valid" class="text-danger">{{ mapeiaErro(teamForm.controls['sixth_pokemon'].errors) }}</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
