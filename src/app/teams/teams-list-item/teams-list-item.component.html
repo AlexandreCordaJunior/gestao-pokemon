@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-between">
-  <h3 class="align-middle">{{ team?.name }}</h3>
+  <h3 class="align-middle">{{ team?.name | titlecase }}</h3>
 
   <img *ngIf="team?.first_pokemon" [src]="team?.first_pokemon?.sprite" [alt]="team?.first_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
   <img *ngIf="team?.second_pokemon"  [src]="team?.second_pokemon?.sprite" [alt]="team?.second_pokemon?.name" class="img-responsive align-middle" style="max-height: 75px">
