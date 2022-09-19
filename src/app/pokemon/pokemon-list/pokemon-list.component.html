@@ -1,9 +1,6 @@
-<app-pokemon-list-item [pokemonNumber]="1" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="2" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="3" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="4" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="5" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="6" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="7" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="8" class="p-3"></app-pokemon-list-item>
-<app-pokemon-list-item [pokemonNumber]="9" class="p-3"></app-pokemon-list-item>
+<app-pokemon-list-item *ngFor="let pokemonNumber of pokemonNumbers" [pokemonNumber]="pokemonNumber"></app-pokemon-list-item>
+
+<div>
+  <button *ngIf="page > 0" class="btn btn-primary" (click)="navAnterior()">Anterior</button>
+  <button *ngIf="page < 89" class="btn btn-primary" (click)="navProximo()">Próximo</button>
+</div>
